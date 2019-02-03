@@ -1,0 +1,66 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/static/d.css">
+<title>Polling Meter</title>
+<style ="stylesheet">
+a{text-decoration:none;}
+</style>
+</head>
+
+<body width="100%">
+	<div class="one">
+<div style="position:absolute" height="65" rightmargin = "594">
+	<img src="/static/polling.png" height="60" width="185" >
+</div>
+
+	<p ALIGN="RIGHT">
+	<b><a href="/">HOME</a>
+	&nbsp; &nbsp; &nbsp;
+	<a href="/about">ABOUT US</a>
+	&nbsp; &nbsp; &nbsp;
+        <a href="/why-us">WHY US</a></b>
+	&nbsp; &nbsp; &nbsp;
+	<b><a href="/logout">LOG OUT</a></b>
+	&nbsp; &nbsp; &nbsp;
+	</p>
+	</div>
+<div class="two">
+    <div style="position:absolute">
+    <p style="font-size:18; color:#AF34D5; font-family: 'comic sans MS'" >Welcome {{current_user.Name}}!</p>
+        </div>
+    <center>
+<p style="font-size:28; color:#AF34D5; font-family: 'comic sans MS'" >Question : This is an example question for polling?</p>
+</center>
+<div class="cir">
+<center>
+<br><br><br><br>
+	<!--<a class="button1" href="poll-station/a">Amartya</a>-->
+<button class="button1" name="a" type="submit" value="a" onclick= "window.location+='/a'"><b>Amartya Parijat</b></button>
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  
+<button class="button1" name = "b" type="submit" value="b" onclick= "window.location+='/b'"><b>Anugrah Bhatt</b></button>
+<br><br><br><br>
+<button class="button1" name="c" type="submit" value="c" onclick= "window.location+='/c'"><b>Apoorv Bhardwaj</b></button>
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  
+<button class="button1" name="d" type="submit" value="d" onclick="window.location+='/d'" ><b>Ayushi Batham</b></button>
+<br><br><br><br>
+</center>
+</div>
+</div>
+<div class="three">
+<center>
+<p ALIGN="center">
+	<a style="color:white" href="/learn">Learn How We Work</a>
+	&nbsp;|&nbsp;
+	<a style="color:white" href="/help">Help Center</a>
+	&nbsp;|&nbsp;
+	<a style="color:white" href="/policies">Terms and Conditions</a>
+</p>
+<p style="font-size:20">Polling Meter</p>
+<p style="font-size:10">Copyright 2018 Polling Meter | All Rights Reversed
+</p>
+</center>
+</div>
+</body>
+</html>
