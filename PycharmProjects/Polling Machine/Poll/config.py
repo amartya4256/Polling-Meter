@@ -7,4 +7,4 @@ class Config(object):
     TWILIO_NUMBER = '+919934785875'
 
 
-Config_test = True
+Config_test = False
