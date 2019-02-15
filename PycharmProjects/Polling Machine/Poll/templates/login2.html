@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polling Meter Login</title>
+    <link rel="stylesheet" type="text/css" href="/static/d.css">
+    <style ="stylesheet">
+    a{text-decoration:none;}
+    </style>
+</head>
+<body width="100%">
+	<div class="one">
+        <div style="position:absolute" height="65" rightmargin = "594">
+	        <img src="/static/polling.png" height="60" width="185" >
+        </div>
+
+	    <p ALIGN="RIGHT">
+            <b><a href="/">HOME</a>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="/about">ABOUT US</a>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="/why-us">WHY US</a></b>
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	    </p>
+	</div>
+    <div class="two">
+        <div class="log">
+            <center>
+                     <h1>Sign In</h1>
+        <form action="" method="post" novalidate>
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.aadharid.label }}<br>
+                {{ form.aadharid(size=32, class='login') }}
+                <button type="button" onclick="window.location+='login/'+document.getElementById('aadharid').value">Get otp</button>
+                 {% for error in form.aadharid.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            <p>
+                {{ form.otp.label }}<br>
+                {{ form.otp(size=32) }}
+                {% for error in form.otp.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            <p> {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                {% for message in messages %}
+                <span style = "color : red;">{{message}}</span>
+                {% endfor %}
+                {% endif %}
+                {% endwith %}
+            </p>
+            <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
+            <p>{{ form.login() }}</p>
+        </form>
+
+            </center>
+        </div>
+    </div>
+<div class="three">
+    <center>
+        <p ALIGN="center">
+            <a style="color:white" href="/learn">Learn How We Work</a>
+            &nbsp;|&nbsp;
+            <a style="color:white" href="/help">Help Center</a>
+            &nbsp;|&nbsp;
+            <a style="color:white" href="/policies">Terms and Conditions</a>
+        </p>
+        <p style="font-size:20">Polling Meter</p>
+        <p style="font-size:10">Copyright 2018 Polling Meter | All Rights Reversed
+        </p>
+    </center>
+</div>
+</body>
+</html>
