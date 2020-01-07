@@ -1,4 +1,12 @@
 # Polling-Meter
+
+Contributors : 
+1. Amartya Parijat (Flask, JavaScript)
+2. Ayushi Batham (Html, Css)
+3. Anugrah Bhatt (Html, JavaScript)
+4. Apoorv Bhardwaj (Html, Css)
+5. Utkarsh Saxena (Adobe Illustrator)
+
 Polling Meter is a Python flask based web app. It is made for a secured implementation of Indian elections made online. We provide security to the polls by insulating the data of user within a time stamp in an offline database. This database can only be accessed by Flask application. The web app has been developed free of any application vulnerability. So, it tricks the attackers and makes it almost impossible for them to get access to the user information.
 
 How does it work: 
